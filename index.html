@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristian Perez | Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6285a6aa1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!------------- back to top button ------------->
+
+    <a href="#" id="to-top"><i class="fa-solid fa-square-caret-up"></i></a>
+
+    <!------------- header + navigation bar ------------->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1><i class="fa-solid fa-globe"></i> Cristian Perez</h1>
+          </div>
+          <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
+          <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
+            <span class="icons">
+              <a
+                href="https://www.linkedin.com/in/cristian-perez23"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/cristianperez23" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </span>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <br /><span>Cristian Perez</span><br />
+            from NJ
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!------------- about ------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="imgs/about.png" alt="Montclair State Univerty Logo" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-description">
+              I am a 2nd year computer science student at Montclair State
+              University. I began my programming journey self taught. I continue
+              to explore its possibilities in my free time, while learning more
+              in university. I am fascinated with most development areas ranging
+              from web development to object-oriented programming.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2021 - 2025</span><br />Montclair State University
+                </li>
+                <li><span>GPA</span><br />3.93/4.0</li>
+                <li>
+                  <span>Programs and Activities</span><br />Presidential
+                  Scholars Program & Computer Club
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Python/Java</span><br />Back-end development & OOP
+                </li>
+                <li>
+                  <span>HTML, CSS, JavaScript</span><br />Front-end development
+                </li>
+                <li><span>SQL</span><br />Database operation and management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------- portfolio ------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="imgs/MWcalc.jpg" alt="Calculator" />
+            <div class="layer">
+              <h3>Math Wizard Calulator - Java</h3>
+              <p>
+                A functioning calculator that computes two user inputs.
+                Functions and displays on a GUI and imports include (Swing, AWT,
+                Frame, etc.).
+              </p>
+              <a
+                href="https://github.com/cristianperez23/MathWizard-Calculator"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="imgs/Website.jpg" alt="Computers and code" />
+            <div class="layer">
+              <h3>Personal Website</h3>
+              <p>
+                Created this website to display my HTML, CSS, and JavaScript
+                skills. Here you can find out who I am, my projects, and how to
+                reach me.
+              </p>
+              <a href="#" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="imgs/numbers.jpg" alt="Numbers" />
+            <div class="layer">
+              <h3>Int Guessing Game - C</h3>
+              <p>
+                Integer guessing game that uses the Random library and recalls
+                classes based on user input.
+              </p>
+              <a
+                href="https://github.com/cristianperez23/Int-Guessing-Game"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/cristianperez23" class="btn" target="_blank"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!------------- contact ------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              ><a href="mailto: cristianiperez23@gmail.com"
+                >cristianiperez23@gmail.com</a
+              >
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>973-572-7660</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/cristian-perez23"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/cristianperez23" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="ResumePort.pdf" class="btn btn2" target="_blank">Resume</a>
+          </div>
+          <div clas="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Messages"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Thanks for stopping by! <i class="fa-solid fa-face-smile"></i></p>
+      </div>
+    </div>
+
+    <!------------- JS ------------->
+
+    <script>
+      const mainMenu = document.querySelector(".mainMenu");
+      const closeMenu = document.querySelector(".closeMenu");
+      const openMenu = document.querySelector(".openMenu");
+
+      openMenu.addEventListener("click", show);
+      closeMenu.addEventListener("click", close);
+
+      function show() {
+        mainMenu.style.display = "flex";
+        mainMenu.style.top = "0";
+      }
+
+      function close() {
+        mainMenu.style.top = "-100%";
+      }
+    </script>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwaZgLLW-LVuCFn1v67qVrh1-IBwrj5xMlDPRzi942bABkY4Zv4SP5qtoqJYqC7zsiT/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 4000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      const toTop = document.querySelector("#to-top");
+      window.addEventListener("scroll", scrollFunction);
+      function scrollFunction() {
+        if (window.pageYOffset > 300) {
+          toTop.style.display = "block";
+        } else {
+          toTop.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
