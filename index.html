@@ -43,11 +43,11 @@
             </span>
           </ul>
         </nav>
-        <div class="header-text">
+        <div class="map">
           <h1>
-            Hi, I'm <br /><span>Cristian Perez</span><br />
-            from NJ
+            Hi, I'm <span>Cristian Perez</span> from NJ
           </h1>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_58Rc9hR2MMK4nI2GRPqe2cAlKMIDYQ&ehbc=2E312F" width="640" height="480"></iframe>
         </div>
       </div>
     </div>
@@ -58,45 +58,68 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="imgs/about.png" alt="Montclair State Univerty Logo" />
+            <img src="imgs/MeIMG.jpg" alt="Montclair State Univerty Crest Logo" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p class="about-description">
-              I am a 2nd year computer science student at Montclair State
-              University. I began my programming journey self taught. I continue
-              to explore its possibilities in my free time, while learning more
-              in university. I am fascinated with most development areas ranging
-              from web development to software engineering.
+              I am a junior Computer Science student currently attending Montclair State University with a profound
+               passion for exploring and learning new technological innovations, as well as all areas within the realm of 
+               STEM. As an Application Developer Co-Op at Johnson & Johnson, I am actively engaging and honing my skills in 
+               front-end/application development, data analysis and visualization, and backlog refinement, with a focus on incorporating 
+               automation into every facet of my work. I thrive in dynamic and forward-thinking work environments, embracing team collaboration, and have 
+               experience working seamlessly with global teams. I am motivated to solve thought-provoking problems and excel as a driven leader
+                and effective communicator. My mission is to leave a significant mark on the world of technology.
             </p>
 
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('education')">
                 Education
               </p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
               <p class="tab-links" onclick="opentab('skills')">Skills</p>
             </div>
             <div class="tab-contents active-tab" id="education">
               <ul>
                 <li>
-                  <span>2021 - 2025</span><br />Montclair State University
+                  <span>2021 - 2025</span><br /><ul>
+                    <li>Montclair State University</li>
+                  </ul>
                 </li>
-                <li><span>GPA</span><br />3.9/4.0</li>
+                <li><span>GPA</span><br /><ul>
+                  <li>3.85 / 4.0</li>
+                </ul></li>
                 <li>
-                  <span>Programs and Activities</span><br />Presidential
-                  Scholars Program, Computer Club, Robotics Club,<br/> & Game Development Club
+                  <span>Programs and Activities</span><br />
+                  <ul>
+                    <li>- Presidential Scholars Program</li>
+                    <li>- Computing Club Vice President</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Johnson & Johnson</span><br /><ul>
+                    <li>Application Developer Co-Op (2023 - Present)</li>
+                  </ul>
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="skills">
               <ul>
                 <li>
-                  <span>Python/Java</span><br />Back-end development & OOP
+                  <span>Programming Languages</span><br /><ul>
+                    <li>Python, Java, HTML, CSS, JavaScript</li>
+                  </ul>
                 </li>
                 <li>
-                  <span>HTML, CSS, JavaScript</span><br />Front-end development
+                  <span>Frameworks and Tools</span><br /><ul>
+                    <li>Microsoft 365, VS Code, GitHub, Power Apps, Power BI, Power Automate, Jira, Figma</li></ul>
                 </li>
-                <li><span>SQL</span><br />Database operation and management</li>
+                <li><span>Soft Skills</span><br /><ul>
+                  <li>Project Planning, Backlog Refinement, Stakeholder Engagement, Effective Communication, Adaptability, Time Management</li></ul>
               </ul>
             </div>
           </div>
@@ -127,7 +150,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="imgs/Website.jpg" alt="Computers and code" />
+            <img src="imgs/code.jpg" alt="Code" />
             <div class="layer">
               <h3>Personal Website</h3>
               <p>
@@ -141,12 +164,12 @@
             </div>
           </div>
           <div class="work">
-            <img src="imgs/Keyboard.jpg" alt="Keyboard" />
+            <img src="imgs/keyboard.jpg" alt="Keyboard" />
             <div class="layer">
               <h3>Snake Game - Python</h3>
               <p>
-                Fully functional snake game using turtle() import. 
-                Logs score and high_score and increases in speed/time.
+                Fully functional snake game using turtle() import. Logs score
+                and high_score and increases in speed/time.
               </p>
               <a
                 href="https://github.com/cristianperez23/Snake-game"
@@ -263,7 +286,7 @@
             setTimeout(function () {
               msg.innerHTML = "";
             }, 4000);
-            form.reset();
+              form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
       });
